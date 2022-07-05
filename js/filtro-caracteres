@@ -1,3 +1,4 @@
+//Aquí revisamos que se coloquen solo minúsculas y no acentos
 function filtroCaracteres () {
      
     var letras = Array.from(texto.value);

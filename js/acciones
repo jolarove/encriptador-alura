@@ -9,75 +9,15 @@ var vocales =["a","e","i","o","u"];
 var prohibidos = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z","á","é","í","ó","ú", "ñ","0",
     "1","2","3","4","5","6","7","8","9"];
 var encriptado;
-let placeholder = texto.placeholder;
+let placeholder = texto.placeholder;    
 
-//Funciones
-
-  
-//Aquí revisamos que se coloquen solo minúsculas y no acentos       
-
-
-//Implementamos la codificación solicitada para encriptar o desencriptar
-function codificacion(){
-    var letras = Array.from(texto.value);
-    var posicion = 0;
-    var previo=[];
-    var mensaje;
-    var arr;
-    var n;
-    filtroCaracteres();
-     
-    while(posicion < letras.length){
-         
-        var contador = 0;
-        var letra = letras[posicion];
-        
-
-        while (contador < vocales.length) {
-
-            if (letra != vocales[contador]){
-                contador++;
-            }
-            else if(letra == vocales[contador]){
-                letra = codigo[contador];
-                 
-            }
-            
-            
-        }
-
-        if (encriptado == true) {
-            previo.push(letra);
-            posicion++;
-        }
-        else {
-            arr = Array.from(letra);
-            letra = arr[0];  
-            previo.push(letra);
-             
-            posicion = posicion + arr.length;   
-        }
-         
-
-    }
-    mensaje = previo[0];
-    var x = 1;
-    while (x < previo.length){
-        mensaje = mensaje + previo[x];
-        x++;
-    }
-    console.log(mensaje);
-    desencriptado.value = mensaje;
-     
-     
-}
-
+//Codificamos
 function encriptacion() {
     encriptado = true;
     codificacion();
 }
 
-//Implementamos la descodificación
+//Descodificamos
 function descriptacion(){
     encriptado = false;
     codificacion();
