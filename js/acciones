@@ -15,55 +15,7 @@ let placeholder = texto.placeholder;
 
   
 //Aquí revisamos que se coloquen solo minúsculas y no acentos       
-function filtroCaracteres () {
-     
-    var letras = Array.from(texto.value);
-    var seguir = true;
-    var posicion = 0;
-    
-    console.log(letras)
-    while (posicion < letras.length) {
-        var contador = 0;
-        var letra = letras[posicion];
-         
-        while (contador < prohibidos.length) {
-            console.log(prohibidos[contador], letras[posicion])
-         
-            if (letra != prohibidos[contador]) {
-                contador++;
-            }
-            else if (letra == prohibidos[contador]) {
-                ocultarBloque();
-                alert("Solo se permiten minúsculas y sin acentos. Ingrese nuevamente el texto");
-                texto.value= "ingrese el texto aqui";
-                seguir = false;
-                break;
-                 
-            } 
-                            
-               
-        }
-        if (seguir == true) {
-            posicion++;
-        }
-        else {
-            break;
-            
-        }
 
-    } 
-
-    if (seguir == true) {
-         
-        mostrarBloque(); 
-         
-    }
-    else {
-        ocultarBloque();
-    }
-                 
-
-}
 
 //Implementamos la codificación solicitada para encriptar o desencriptar
 function codificacion(){
