@@ -19,7 +19,8 @@ function filtroCaracteres () {
             else if (letra == prohibidos[contador]) {
                 ocultarBloque();
                 alert("Solo se permiten minúsculas y sin acentos. Ingrese nuevamente el texto");
-                texto.value= "ingrese el texto aqui";
+                texto.value=""
+                texto.placeholder = "ingrese el texto aqui";
                 seguir = false;
                 break;
                  
