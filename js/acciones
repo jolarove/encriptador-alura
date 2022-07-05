@@ -21,33 +21,11 @@ function encriptacion() {
 function descriptacion(){
     encriptado = false;
     codificacion();
-}
-
-//Aquí habilitamos el botón copiar
-function copiando(){
-
-    if (document.selection) { 
-        var range = document.body.createTextRange();
-        range.moveToElementText(document.getElementById("desencriptado"));
-        range.select().createTextRange();
-        document.execCommand("Copy"); 
-    } else if (document.getSelection) {
-        var range = document.createRange();
-        range.selectNode(document.getElementById("desencriptado"));
-        window.getSelection().addRange(range);
-        document.execCommand("Copy");
-        alert("Texto copiado con éxito") 
-    }
-
-    ocultarBloque();
-
-}
-
-         
+}      
 
 //Acciones
 encriptar.onclick = encriptacion;
 desencriptar.onclick = descriptacion;
-copiar.onclick = copiando;
+
 ocultarBloque();
  

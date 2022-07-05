@@ -1,0 +1,12 @@
+//Aquí habilitamos el botón copiar
+var desencriptado = document.getElementById("desencriptado");
+var copiar = document.getElementById("copiar");
+copiar.addEventListener('click', e => {
+    desencriptado.select();
+    document.execCommand('copy');
+    ocultarBloque();
+    alert("Texto copiado con éxito");
+});
+    
+
+

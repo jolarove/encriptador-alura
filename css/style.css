@@ -261,7 +261,10 @@ body{
     color: #495057;
     border: none;
     text-align: initial;
+    border-color: none;
 }
+
+
 
 #copiar {
     display: flex;
