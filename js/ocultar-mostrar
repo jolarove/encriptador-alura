@@ -1,0 +1,11 @@
+function ocultarBloque () {
+
+    bloque.style.display = "none";
+    desencriptado.value = "";
+
+}
+
+function mostrarBloque () {
+    bloque.style.display = "block";                           
+               
+}
