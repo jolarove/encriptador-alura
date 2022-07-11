@@ -22,9 +22,9 @@ body{
 .cajaTex {
     position: absolute;
     width: 549px;
-    height: 394px;
+    height: 700px;
     left: 240px;
-    top: 209px;
+    top: 90px;
     font-family: "calibri";
     font-style: normal;
     font-weight: 400;
@@ -51,7 +51,7 @@ body{
     width: 229px;
     height: 18px;
     left: 240px;
-    top: 679px;
+    top: 860px;
 }
 
 #alerta{
@@ -100,7 +100,7 @@ body{
     width: 680px;
     height: 67px;
     left: 195px;
-    top: 736px;
+    top: 900px;
 }
 
 #encriptar {
@@ -292,4 +292,9 @@ body{
     color: #0A3871;
     padding-left: 150px;
     padding-top: 24px;
+}
+
+/*CSS responsivo*/
+@media screen and (max-width:480px) {
+   
 }
