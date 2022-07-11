@@ -15,12 +15,16 @@ let placeholder = texto.placeholder;
 function encriptacion() {
     encriptado = true;
     codificacion();
+    texto.value=""
+    texto.placeholder = "ingrese el texto aqui";
 }
 
 //Descodificamos
 function descriptacion(){
     encriptado = false;
     codificacion();
+    texto.value=""
+    texto.placeholder = "ingrese el texto aqui";
 }      
 
 //Acciones
