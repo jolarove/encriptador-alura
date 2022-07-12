@@ -305,11 +305,11 @@ body{
 
 /*CSS responsivo smartphones portrait y landscape*/
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1000px)  {
+@media only screen and (min-device-width : 280px) and (max-device-width : 900px)  {
    .logo {
         position: absolute;
         width: auto;
-        height: 96px;
+        height: 150px;
         margin: 10% 0;
     }
 
