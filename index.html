@@ -5,6 +5,7 @@
     <head>
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Encriptador de Texto - Alura</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reset.css">
@@ -13,40 +14,50 @@
 
     <body>
         <header>
-            <img src="logo.png", class="logo">
+            <h1>
+                <img src="logo.png", class="logo">
+            </h1>            
         </header>
 
         <main>
-            <textarea class="cajaTex" id="tex" placeholder="ingrese el texto aqui"></textarea>
+            <section class="principal">
+                <textarea class="cajaTex" id="tex" placeholder="ingrese el texto aqui"></textarea>
+                      
 
-            <div id="botones">
+                  
+                <div class="cajaAlerta"> 
 
-                <button class="boton" id="encriptar">Encriptar</button>
-                <button class="boton" id="desencriptar">Desencriptar</button>
+                    <img src="exclamacion.png" id="alerta">
+                    <p class="condicionantes">Usa solo minúsculas y palabras sin acento</p>
 
-            </div>
+                </div>
 
-            <div class="cajaAlerta"> 
+                <div id="botones">
 
-                <img src="exclamacion.png" id="alerta">
-                <p class="condicionantes">Usa solo minúsculas y palabras sin acento</p>
+                    <button class="boton" id="encriptar">Encriptar</button>
+                    <button class="boton" id="desencriptar">Desencriptar</button>
 
-            </div>
+                </div>
+            </section>
             
-            <div class="cajaDerecha" id="divCon_Muñeco">
+            <section class="resultado">
+                <div class="cajaDerecha" id="divCon_Muñeco">
 
-                <img src="Muñeco.png" class="muñeco">
-                <p class="noMensaje">Ningún mensaje fue <br> encontrado</p>
-                <p class="indicacionMensaje">Ingresa el texto que desee encriptar o <br> desencriptar</p>
+                    <img src="Muñeco.png" class="muñeco">
+                    <p class="noMensaje">Ningún mensaje fue <br> encontrado</p>
+                    <p class="indicacionMensaje">Ingresa el texto que desee encriptar o <br> desencriptar</p>
+    
+                </div>
+    
+                <div class="cajaDerecha" id="divSin_Muñeco">
+    
+                    <textarea id="desencriptado" readonly="readonly"></textarea>
+                    <button class="boton" id="copiar">Copiar</button>
+    
+                </div>
 
-            </div>
-
-            <div class="cajaDerecha" id="divSin_Muñeco">
-
-                <textarea id="desencriptado" readonly="readonly"></textarea>
-                <button class="boton" id="copiar">Copiar</button>
-
-            </div>
+            </section>
+            
         </main>
 
         <footer>

@@ -6,7 +6,7 @@ body{
 }
 
 .logo {
-    display: flex;
+    display: absolute;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
@@ -19,11 +19,17 @@ body{
 }
 
 /*Caja para escribir texto*/
+.principal{
+    position: absolute;
+    width: 40%;
+    margin: 5% 0 0 10%;
+}
+
 .cajaTex {
     position: absolute;
-    width: 549px;
-    height: 700px;
-    left: 240px;
+    width: 100%;
+    margin: 0 0 0 0;
+    height: 600px;
     top: 90px;
     font-family: "calibri";
     font-style: normal;
@@ -50,8 +56,7 @@ body{
     position: absolute;
     width: 229px;
     height: 18px;
-    left: 240px;
-    top: 860px;
+    top: 750px;
 }
 
 #alerta{
@@ -94,25 +99,25 @@ body{
     /* Auto layout */
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     position: absolute;
-    width: 680px;
+    width: 100%;
     height: 67px;
-    left: 195px;
-    top: 900px;
+    margin: 836px 0 0 0;
+   
 }
 
 #encriptar {
   
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 24px;
 
     position: static;
-    width: 328px;
-    height: 67px;
+    width: 40%;
+    height: auto;
     left: 0px;
     top: 0px;
     background: #0A3871;
@@ -120,18 +125,17 @@ body{
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0 0 0 10%;
 
     /*nombre*/
     font-family: 'calibri';
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
-    padding-left: 132px;
-    padding-top: 24px;
+    padding: 5% 15%;
 }
 
 #desencriptar {
@@ -141,8 +145,8 @@ body{
     padding: 24px;
 
     position: static;
-    width: 328px;
-    height: 67px;
+    width: 40%;
+    height: auto;
     left: 352px;
     top: 0px;
     background: #D8DFE8;
@@ -152,18 +156,17 @@ body{
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 24px;
+    margin: 0 0 0 10%;
 
     /*nombre*/
     font-family: 'calibri';
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: #0A3871;
-    padding-left: 132px;
-    padding-top: 24px;
+    padding: 5% 14%;
 
 }
 
@@ -177,11 +180,11 @@ body{
 }
 
 /*Frame de resultado*/
-.cajaDerecha {
+.resultado {
     position: absolute;
-    width: 400px;
+    width: 30%;
     height: 944px;
-    left: 1000px;
+    margin: 0 5% 0 10%;
     top: 40px;
     right: 50px;
     bottom: 40px;
@@ -195,17 +198,16 @@ body{
 
 .muñeco {
     position: absolute;
-    width: 336px;
-    height: 304px;
+    width: 70%;
+    height: auto;
     top: 200px;
-    right: 32px;
-    
+    right: 75px;
 }
 
 .noMensaje {
     position: static;
-    width: 336px;
-    height: 58px;
+    width: 100%;
+    height: auto;
    
 
     font-family: 'calibri';
@@ -226,13 +228,13 @@ body{
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-    margin: 600px 32px;
+    margin: 600px 0px;
 }
 
 .indicacionMensaje {
     position: static;
-    width: 336px;
-    height: 48px;
+    width: 100%;
+    height: auto;
 
     font-family: 'calibri';
     font-style: normal;
@@ -252,12 +254,12 @@ body{
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-    margin: -580px 32px;
+    margin: -580px 0px;
 }
 
 #desencriptado {
     position: absolute;
-    width: 336px;
+    width: 80%;
     height: 600px;
     left: 32px;
     top: 72px;
@@ -282,10 +284,9 @@ body{
     padding: 24px;
 
     position: absolute;
-    width: 336px;
+    width: 40%;
     height: 67px;
-    left: 32px;
-    top: 845px;
+    margin: 845px 30% auto 30%;
 
     /* Dark blue/dark-blue-300 */
     border: 1px solid #0A3871;
@@ -294,16 +295,102 @@ body{
     /*nombre*/
     font-family: 'calibri';
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: #0A3871;
-    padding-left: 150px;
-    padding-top: 24px;
+    padding: 5% 16%;
 }
 
 /*CSS responsivo*/
 @media screen and (max-width:480px) {
-   
+   .logo {
+        position: absolute;
+        width: auto;
+        height: 96px;
+        margin: 10% 0;
+    }
+
+    .principal{
+        position: inherit;
+        width: 100%;
+        margin: 20% 0 0 10%;
+    }
+
+    .cajaTex{
+        position: relative;
+        width: 80%;        
+        height: 750px;
+        font-size: 100px;
+    }
+    .cajaAlerta{
+        position: inherit;
+        height: 100px;
+        width: 100%;
+        margin: 4em 0 0 0;
+    }
+
+    #alerta{
+        width: 50px;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .condicionantes{
+        position: relative;
+        font-size: 50px;
+        width: 100%;
+        margin: 800px 0;
+    }
+
+    #botones {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin: 10% 0;
+    }
+
+    #encriptar, #desencriptar{
+        width: 75%;
+        margin-bottom: 25px;
+        padding: 7% 18%;
+        font-size: 100px;
+        text-align: center;
+    }
+
+   .resultado{
+        position: relative;
+        width: auto;
+        height: 750px;
+        margin: 35% 5% 35% 15%;
+    }
+
+   .muñeco{
+        display: none;
+    }
+
+    .noMensaje{
+        padding-top: 20%;
+        font-size: 75px;
+        margin-top: auto;
+    }
+
+    .indicacionMensaje{
+        font-size: 50px;
+    }
+
+    #desencriptado{
+        position: relative;
+        height: auto;
+        font-size: 100px;
+        margin: 0 10% 0 10%;
+    }
+
+    #copiar{
+        font-size: 50px;
+        margin: 25% 30%;
+    }
+
+
 }

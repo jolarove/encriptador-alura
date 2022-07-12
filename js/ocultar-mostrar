@@ -1,12 +1,15 @@
 
 function ocultarBloque () {
 
+    bloqueMuñeco.style.display ="block"
     bloque.style.display = "none";
     desencriptado.value = "";
+    
 
 }
 
 function mostrarBloque () {
-    bloque.style.display = "block";                           
+    bloque.style.display = "block";  
+    bloqueMuñeco.style.display = "none";                         
                
 }

@@ -2,6 +2,7 @@
 var encriptar = document.querySelector("#encriptar");
 var desencriptar = document.querySelector("#desencriptar");
 var bloque = document.querySelector("#divSin_Muñeco");
+var bloqueMuñeco =document.querySelector("#divCon_Muñeco");
 var desencriptado = document.querySelector("#desencriptado");
 var texto = document.querySelector("#tex");
 var codigo =["ai","enter","imes","ober","ufat"];
