@@ -303,8 +303,9 @@ body{
     padding: 5% 16%;
 }
 
-/*CSS responsivo*/
-@media screen and (max-width:480px) {
+/*CSS responsivo smartphones portrait y landscape*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px)  {
    .logo {
         position: absolute;
         width: auto;
